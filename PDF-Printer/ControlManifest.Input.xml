@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PdfPrinter" constructor="PdfPrinter" version="1.2.0" display-name-key="PdfPrinter" description-key="PdfPrinter" control-type="virtual" >
+
+    <property name="instrumentationKey" display-name-key="InstrumentationKey_Key" description-key="instrumentation_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <css path="../dist/output.css" order="1" />
+      
+    </resources>
+    
+    <!-- <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage> -->
+
+  </control>
+</manifest>

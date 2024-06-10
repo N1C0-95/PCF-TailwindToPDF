@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F9FAFB
+}
+
+p {
+    @apply text-sm text-gray-400
+}
+
+.main-container{
+    @apply flex flex-col w-full bg-slate-100
+}
+.title {
+    @apply font-bold text-2xl my-4 text-center text-blue-600
+}
+
+
+.btn {
+    @apply px-5 py-2 rounded-full m-1 text-center font-bold text-sm disabled:opacity-30 transition
+}
+
+.btn.primary {
+    border: 1px solid #E5E7EB;
+    @apply bg-white hover:bg-sky-300 text-black
+}
+
+
+.btn.success {
+    @apply bg-green-400 hover:bg-green-600 text-white
+}
+
+.btn.accent{
+    @apply bg-pink-500 hover:bg-pink-600 text-white
+  }
+
+.header {
+    @apply flex justify-between
+}
+
+table{
+   @apply w-full mb-8
+}
+th.right{
+    @apply text-right font-bold text-gray-700
+}
+th.left{
+    @apply text-left font-bold text-gray-700
+}
+td.right{
+    @apply text-right text-gray-700
+}
+td.left{
+    @apply text-left text-gray-700
+}
+td.text-total{
+    @apply font-bold
+}
+.card{
+    @apply bg-white border rounded-lg shadow-lg px-6 py-8 mx-auto mt-8 w-3/4
+}
+
+.headerInvoice {
+    @apply flex justify-between mb-6
+}
+
+.sectionTitle {
+    @apply text-lg font-bold
+}
+
+.textInvoice {
+    @apply text-gray-700 mb-2
+}
+.textFooter{
+    @apply text-gray-700 text-sm mb-2
+}
+
+.billSection {
+    @apply mb-8
+}
+.spinner{
+    @apply w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600
+}
+.error{
+    @apply bg-red-600 w-full text-white rounded-xl p-3 my-6
+}
